@@ -1,0 +1,116 @@
+html {
+  background-image: linear-gradient(45deg, #ee0979, #ff6a00);
+  opacity: 0.8;
+  height: 100%;
+  /* background-image: linear-gradient(45deg, #ff4e50, #f9d423); */
+}
+
+main {
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  text-transform: lowercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intro-section {
+  font-size: 2em;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.nav-section ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
+  color: whitesmoke;
+}
+
+.nav-section ul li {
+  margin: 3px;
+}
+
+.nav-section a {
+  text-decoration: none;
+  color: whitesmoke;
+  cursor:url("http://www.rw-designer.com/cursor-extern.php?id=129402"), pointer;
+}
+
+.nav-section span {
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+/* the span code is from tsimenis on CodePen: https://codepen.io/tsimenis/pen/BKdENX?editors=1100*/
+/* I made minor changes to the code - made the line thicker and changed the color to Acid Green */
+
+span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2.5px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+span:before {
+  left: -2.5px;
+}
+span:after {
+  right: 2.5px;
+  background: #00ff36;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+  background: #00ff36;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  width: 2em;
+  height: 2em;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+footer a img {
+  max-width: 100%;
+  max-height: 100%;
+  padding-right: 3px;
+  padding-left: 3px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  cursor:url("http://www.rw-designer.com/cursor-extern.php?id=129402"), auto;
+  /* width: 100%;
+}
+

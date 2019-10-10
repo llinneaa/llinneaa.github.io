@@ -1,0 +1,143 @@
+html {
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  text-transform: lowercase;
+  font-family: 'Montserrat', sans-serif;
+  width: 40em;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.nav-section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.nav-section li {
+  margin: 10px;
+}
+
+.nav-section li:hover {
+  color: #ff6a00;
+}
+
+.nav-section a {
+  text-decoration: none;
+  cursor:url("http://www.rw-designer.com/cursor-extern.php?id=129402"), pointer;
+  color: inherit;
+}
+
+#blog-link {
+  color: grey;
+}
+
+#home-nav-link {
+  text-align: left;
+}
+
+/* I found how to create the 'strikethrough' decoration on my page header on this StackOverflow page:
+https://stackoverflow.com/questions/2539207/how-to-change-the-strike-out-line-through-thickness-in-css */
+
+.blog-header {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.blog-header::after {
+  border-bottom: 0.3em solid rgb(0,255,54,0.6);
+  content: "";
+  left: 0;
+  line-height: 1em;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.blog-header h1 {
+  padding-left: 50px;
+}
+
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+  align-items: left;
+  margin-left: 50px;
+  margin-right: 45px;
+}
+
+  .blog-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .blog-section li {
+    margin-top: 30px;
+  }
+
+  .divider-line {
+    color: rgb(0,255,54);
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+  }
+
+  footer p {
+    font-size: .7em;
+  }
+  
+  footer a {
+    width: 2em;
+    height: 2em;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  
+  footer a img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-right: 3px;
+    padding-left: 3px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    cursor:url("http://www.rw-designer.com/cursor-extern.php?id=129402"), auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .why-class img {
+      display: none;
+    }
+  
+    .why-class li strong {
+      margin-top: .5em;
+      float: left;
+    }
+    .why-class li p {
+      text-align: left;
+      padding-bottom: 1em;
+      margin-top: 2.5em;
+    }
+  
