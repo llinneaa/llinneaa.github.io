@@ -123,10 +123,10 @@ footer a img {
   cursor:url("http://www.rw-designer.com/cursor-extern.php?id=129402"), auto;
 }
 
-@media screen and (max-device-width: 600px) {
-    img {
-      width: 85%;
-      height: auto;
+@media screen and (max-device-width: 480px) {
+    #about-photo {
+      max-width: 85%;
+      max-height: auto;
       margin: 20px;
     }
   }
