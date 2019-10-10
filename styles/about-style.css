@@ -80,8 +80,7 @@ https://stackoverflow.com/questions/2539207/how-to-change-the-strike-out-line-th
 }
 
 #about-photo {
-  max-width: 360px;
-  height: auto;
+  max-width: 20em;
   margin: 20px;
 }
 
@@ -123,3 +122,11 @@ footer a img {
   margin-bottom: 30px;
   cursor:url("http://www.rw-designer.com/cursor-extern.php?id=129402"), auto;
 }
+
+@media only screen and (max-device-width: 600px)
+  {
+    #about-photo {
+      max-width: 85%;
+      margin: 20px;
+    }
+  }
