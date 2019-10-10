@@ -80,7 +80,7 @@ https://stackoverflow.com/questions/2539207/how-to-change-the-strike-out-line-th
 }
 
 #about-photo {
-  max-width: 20em;
+  max-width: 360px;
   max-height: auto;
   margin: 20px;
 }
