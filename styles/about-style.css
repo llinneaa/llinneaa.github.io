@@ -125,15 +125,15 @@ footer a img {
 
 @media only screen and (min-width: 600px) {
 
-  .about-image-section {
+  /* .about-image-section {
     display: flex;
     justify-content: center;
     width: 85%;
     height: auto;
-  }
+  } */
 
     #about-photo {
-      width: 100%;
+      width: 10px;
       height: auto;
     }
   }
