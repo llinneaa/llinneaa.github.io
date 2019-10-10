@@ -129,6 +129,7 @@ footer a img {
     display: flex;
     justify-content: center;
     width: 85%;
+    height: auto;
   }
 
     #about-photo {
