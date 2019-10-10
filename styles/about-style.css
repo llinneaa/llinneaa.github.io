@@ -125,7 +125,7 @@ footer a img {
 
 @media only screen and (min-width: 600px) {
     #about-photo {
-      width: 85%;
+      max-width: 85%;
       height: auto;
       margin: 20px;
     }
