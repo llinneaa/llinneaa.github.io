@@ -127,6 +127,7 @@ footer a img {
   {
     #about-photo {
       max-width: 85%;
+      max-height: auto;
       margin: 20px;
     }
   }
